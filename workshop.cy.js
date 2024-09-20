@@ -1,6 +1,6 @@
 describe('Calculadora de Orçamento', () => {
   it('Preenche o formulário e calcula o orçamento', () => {
-    cy.visit('http://127.0.0.1:5500/index.html#home'); //precisei fazer um goLive como o cypress nao reconhce file
+    cy.visit('http://127.0.0.1:5500/index.html#home'); //precisei fazer um goLive como o cypress nao reconhece file
     
     cy.get('#home').should('contain.text', 'Bem-vindo ao Codex Travel'); //verificar o nome
     cy.get('#valorPassagem').type('1000'); //informando no campo valor da passagem no valor de R$:1000
